@@ -1,13 +1,9 @@
-import express from 'express'
+import express from 'express';
 
-const app =  express();
+const app = express();
 
-
-app.get('/',(req,res)=>{
-    return res.status(200).json({msg:'hello from backend'})
-})
-
-
-
+app.get('/', (req, res) => {
+    return res.status(200).json({ msg: 'hello from backend' });
+});
 
 export default app;
